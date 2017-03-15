@@ -1,14 +1,21 @@
 <?php
 
+/*
+ * This file is part of AlgoliaIndex library.
+ * (c) Julien Bourdeau for Algolia <julien@sigerr.org>
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Algolia\Item2Records;
 
-class Splitter {
-
+class Splitter
+{
     private $attributeName;
     private $attributeMaxSizeInByte;
     private $recordMaxSizeInByte;
 
-    function __construct($attributeName, $attributeMaxSizeInByte = 600, $recordMaxSizeInByte = 2000)
+    public function __construct($attributeName, $attributeMaxSizeInByte = 600, $recordMaxSizeInByte = 2000)
     {
         $this->attributeName = $attributeName;
         $this->attributeMaxSizeInByte = $attributeMaxSizeInByte;
@@ -17,7 +24,7 @@ class Splitter {
 
     public function itemsToRecords(array $items)
     {
-        $records = [];
+        $records = array();
 
         foreach ($items as $item) {
             $records = array_merge($records, $this->itemToRecords($item));
@@ -28,10 +35,10 @@ class Splitter {
 
     public function itemToRecords(array $item)
     {
-        $records = [];
+        $records = array();
 
         if (strlen(json_encode($item)) < $this->recordMaxSizeInByte) {
-            return [$item];
+            return array($item);
         }
 
         $splitAttributes = $this->splitAttribute($item[$this->attributeName]);
