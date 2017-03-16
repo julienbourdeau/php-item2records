@@ -1,13 +1,6 @@
 <?php
 
-/*
- * This file is part of AlgoliaIndex library.
- * (c) Julien Bourdeau for Algolia <julien@sigerr.org>
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
-
-namespace Algolia\Item2Records;
+namespace Algolia\Utils;
 
 class Splitter
 {

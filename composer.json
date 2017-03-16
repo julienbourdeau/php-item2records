@@ -13,8 +13,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Algolia\\Item2Records\\": "src/",
-            "Algolia\\Item2Records\\Tests\\": "tests/"
+            "Algolia\\Utils\\": "src/",
+            "Algolia\\Utils\\Tests\\": "tests/"
         }
     },
     "require-dev": {

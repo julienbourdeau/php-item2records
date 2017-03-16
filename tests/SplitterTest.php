@@ -1,8 +1,8 @@
 <?php
 
-namespace Algolia\Item2Records\Tests;
+namespace Algolia\Utils\Tests;
 
-use Algolia\Item2Records\Splitter;
+use Algolia\Utils\Splitter;
 use PHPUnit\Framework\TestCase;
 
 class SplitterTest extends TestCase

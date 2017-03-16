@@ -1,8 +1,8 @@
 <?php
 
-namespace Algolia\Item2Records\Tests;
+namespace Algolia\Utils\Tests;
 
-use Algolia\Item2Records\Length;
+use Algolia\Utils\Length;
 use PHPUnit\Framework\TestCase;
 
 class LengthTest extends TestCase

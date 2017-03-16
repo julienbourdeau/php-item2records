@@ -1,6 +1,6 @@
 <?php
 
-namespace Algolia\Item2Records;
+namespace Algolia\Utils;
 
 class Length
 {
