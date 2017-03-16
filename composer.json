@@ -16,5 +16,8 @@
             "Algolia\\Item2Records\\": "src/",
             "Algolia\\Item2Records\\Tests\\": "tests/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
     }
 }
